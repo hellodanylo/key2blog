@@ -1,0 +1,12 @@
+.fuse*
+
+# Emacs backup files
+*~
+
+# Emacs autosave files
+\#*\#
+
+# Emacs lock files
+.\#*
+
+dist/

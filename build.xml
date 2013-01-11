@@ -19,7 +19,7 @@
 <project name="Key2Blog - Generator Script" default="build" basedir=".">
     
   <loadproperties srcFile="project.properties" />
-
+  
   <target name="build">
     <!-- Prepares the distribution directory. -->
     <mkdir dir="dist" />        
@@ -83,6 +83,7 @@
 	    classpath="../lib/saxon.jar" 
 	    force="true">
 	<param name="page.uri" expression="@{uri}" />
+	<param name="project.path" expression="${website.path}"/>
       </xslt>
     </sequential>
   </macrodef>
